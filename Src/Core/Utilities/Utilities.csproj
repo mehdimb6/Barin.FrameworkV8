@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>Barin.Framework.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>Barin.Framework.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<AssemblyVersion>8.0.2</AssemblyVersion>
+		<FileVersion>8.0.2</FileVersion>
+		<Description>Utilities Project and External Tools</Description>
+		<Title>Barin.Framework.$(MSBuildProjectName)</Title>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>http://BarinSoft.ir/</PackageProjectUrl>
+		<Authors>Mahdi Moradi</Authors>
+		<PackageReleaseNotes>محلی مشترک برای ابزارهای خاص ساختار موجود</PackageReleaseNotes>
+		<Copyright>Copyright © 2024</Copyright>
+		<PackageTags>Framework Utilities Tools</PackageTags>
+		<Version>$(AssemblyVersion)</Version>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\Common\Common.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="ClosedXML">
+			<HintPath>Dlls\ClosedXML.dll</HintPath>
+		</Reference>
+		<Reference Include="DocumentFormat.OpenXml">
+			<HintPath>Dlls\DocumentFormat.OpenXml.dll</HintPath>
+		</Reference>
+		<Reference Include="ExcelNumberFormat">
+			<HintPath>Dlls\ExcelNumberFormat.dll</HintPath>
+		</Reference>
+		<Reference Include="GemBox.Spreadsheet">
+			<HintPath>Dlls\GemBox.Spreadsheet.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>Dlls\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Stimulsoft.Base">
+			<HintPath>Dlls\Stimulsoft.Base.dll</HintPath>
+		</Reference>
+		<Reference Include="Stimulsoft.Report">
+			<HintPath>Dlls\Stimulsoft.Report.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>

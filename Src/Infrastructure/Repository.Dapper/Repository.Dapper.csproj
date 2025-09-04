@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>Barin.Framework.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>Barin.Framework.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<AssemblyVersion>8.0.3</AssemblyVersion>
+		<FileVersion>8.0.3</FileVersion>
+		<Description>Place of Implementation of Database Connections</Description>
+		<Title>Barin.Framework.$(MSBuildProjectName)</Title>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>http://BarinSoft.ir/</PackageProjectUrl>
+		<Authors>Mahdi Moradi</Authors>
+		<PackageReleaseNotes>محل پیاده سازی ارتباطات دیتابیسی</PackageReleaseNotes>
+		<Copyright>Copyright © 2024</Copyright>
+		<PackageTags>Framework Repository Dapper DataBase</PackageTags>
+		<Version>$(AssemblyVersion)</Version>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.1.35" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\Application\Application.csproj" />
+		<ProjectReference Include="..\..\Core\Domain\Domain.csproj" />
+	</ItemGroup>
+
+</Project>

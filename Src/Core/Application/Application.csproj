@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Barin.Framework.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Barin.Framework.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyVersion>8.0.7</AssemblyVersion>
+    <FileVersion>8.0.7</FileVersion>
+    <Description>Core Project Structure</Description>
+    <Title>Barin.Framework.$(MSBuildProjectName)</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>http://BarinSoft.ir/</PackageProjectUrl>
+    <Authors>Mahdi Moradi</Authors>
+    <PackageReleaseNotes>هسته اصلی معماری تمیز در ساختار موجود</PackageReleaseNotes>
+    <Copyright>Copyright ©  2024</Copyright>
+    <PackageTags>Framework Application Core</PackageTags>
+    <Version>$(AssemblyVersion)</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>

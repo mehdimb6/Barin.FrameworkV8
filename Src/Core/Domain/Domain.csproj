@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>Barin.Framework.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>Barin.Framework.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<AssemblyVersion>8.0.0</AssemblyVersion>
+		<FileVersion>8.0.0</FileVersion>
+		<Description>Low Level Project for define Domains</Description>
+		<Title>Barin.Framework.$(MSBuildProjectName)</Title>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>http://BarinSoft.ir/</PackageProjectUrl>
+		<Authors>Mahdi Moradi</Authors>
+		<PackageReleaseNotes>محل تعریف موجودیت ها در ساختار موجود</PackageReleaseNotes>
+		<Copyright>Copyright © 2024</Copyright>
+		<PackageTags>Framework Domain Entity</PackageTags>
+		<Version>$(AssemblyVersion)</Version>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.9.1" />
+	</ItemGroup>
+
+</Project>
